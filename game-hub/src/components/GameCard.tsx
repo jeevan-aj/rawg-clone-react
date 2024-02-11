@@ -11,7 +11,7 @@ interface Props{
 function GameCard({game}:Props) {
   return ( 
     <>
-    <Card >
+    <Card>
         <Img src={crop(game.background_image)}/>
         <CardBody>
             <Heading fontSize='2xl'>{game.name}</Heading>
