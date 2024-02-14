@@ -32,6 +32,8 @@ export function Navbar() {
             <Button>onemore</Button>
           </Link>
         )}
+        <Link to={'/users'}>
+          <Button>usersList</Button></Link>
       </HStack>
       <ColorModeSwitch />
     </HStack>
