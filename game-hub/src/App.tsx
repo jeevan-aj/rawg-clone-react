@@ -1,11 +1,11 @@
 import { Grid, GridItem, Show } from "@chakra-ui/react";
-import Navbar from "./components/Navbar";
 import GameGrid from "./components/GameGrid";
 import GenereList from "./components/GenereList";
 import { useState } from "react";
 import { Genre } from "./hooks/useGenere";
 import PlatformSelector from "./components/PlatformSelector";
 import { Platform } from "./hooks/useGames";
+import { Navbar } from "./components/Navbar.1";
 
 function App() {
   const [selectedGenre, setSelectedGenere] = useState<Genre | null>(null);
