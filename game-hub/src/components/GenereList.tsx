@@ -21,7 +21,6 @@ function GenereList({selectedGenre,onSelectGenre}:Props) {
   const { data, loading, error } = useGenere();
   const genereSkeleton = [1, 2, 3, 4, 5, 6, 7, 8, 9, 1, 1, 1];
   if (error) return null;
-  console.log(data[0])
   return (
     <List px={5} mt={7}>
       {loading &&

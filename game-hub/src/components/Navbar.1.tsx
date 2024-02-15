@@ -22,18 +22,22 @@ export function Navbar() {
         <Link to={`/layout`}>
           <Button>user</Button>
         </Link>
-        {(location.pathname === '/' || location.pathname === '/contact') &&
+        {(location.pathname === "/" || location.pathname === "/contact") && (
           <Link to={`/contact`}>
-          <Button>contact</Button>
-        </Link>
-        }
+            <Button>contact</Button>
+          </Link>
+        )}
         {location.pathname === "/layout" && (
           <Link to={"onemore"}>
             <Button>onemore</Button>
           </Link>
         )}
-        <Link to={'/users'}>
-          <Button>usersList</Button></Link>
+        <Link to={"/users"}>
+          <Button>usersList</Button>
+        </Link>
+        <Link to={"/signup"}>
+          <Button>Sign up</Button>
+        </Link>
       </HStack>
       <ColorModeSwitch />
     </HStack>

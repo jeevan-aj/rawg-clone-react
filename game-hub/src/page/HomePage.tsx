@@ -1,8 +1,12 @@
 import React from 'react'
+import Counter from '../stateManagement/Counter'
 
 function HomePage() {
   return (
-    <div>HomePage</div>
+    <div>HomePage
+
+      <Counter/>
+    </div>
   )
 }
 
