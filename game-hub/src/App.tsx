@@ -9,7 +9,9 @@ import { Navbar } from "./components/Navbar.1";
 
 function App() {
   const [selectedGenre, setSelectedGenere] = useState<Genre | null>(null);
-  const [selectedPlatform , setSelectedPlatform] = useState<Platform|null>(null)
+  const [selectedPlatform, setSelectedPlatform] = useState<Platform | null>(
+    null
+  );
 
   return (
     <Grid
@@ -27,13 +29,21 @@ function App() {
       </GridItem>
       <Show above="lg">
         <GridItem area="aside">
-          <GenereList selectedGenre={selectedGenre} onSelectGenre={(genre) => setSelectedGenere(genre)} />
+          <GenereList
+            selectedGenre={selectedGenre}
+            onSelectGenre={(genre) => setSelectedGenere(genre)}
+          />
         </GridItem>
       </Show>
 
       <GridItem area="main">
-        <PlatformSelector onSelectPlatform={(platform)=> setSelectedPlatform(platform)}></PlatformSelector>
-        <GameGrid selectedGenre={selectedGenre} selectPlatform={selectedPlatform} />
+        <PlatformSelector
+          onSelectPlatform={(platform) => setSelectedPlatform(platform)}
+        ></PlatformSelector>
+        <GameGrid
+          selectedGenre={selectedGenre}
+          selectPlatform={selectedPlatform}
+        />
       </GridItem>
     </Grid>
   );
