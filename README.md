@@ -1,5 +1,15 @@
 # rawg-clone-react
 
+
+#commits:
+72f685d (HEAD -> newUpdate, origin/newUpdate) cart,login useing useContext
+c8cf5b5 useReducer
+a03ca2e deleted a mistake pages
+04fd89f (origin/main, origin/HEAD, main) Merge pull request #5 from jeevan-aj/newUpdate
+95c5518 routes made for navbar
+3bc7bbb Merge pull request #4 from jeevan-aj/update
+db095ca added a user list
+28cdd75 added routes
 building process : 
 0076471 (HEAD -> update) refactor removed dupicated files
 2ad63ba show loading skeletons
@@ -16,3 +26,8 @@ bcb1cbf build a responsive layout
 aca238a Install chackra UI
 450f82c Initial Commit
 75d6272 (origin/update) Create README.md
+
+
+# contents of repository:
+  * game-hub ->  a website with react that use rawg api to show games , implemented Chakra-ui , routes (react-router-dom) , filtering , displaying crud
+  * cart     ->  implemented useReduce , useContext , implemented cart count , login logout 
